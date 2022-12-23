@@ -15,13 +15,12 @@ class ProfileController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\View\View
      */
-    public function edit(Request $request)
+    public function show(Request $request)
     {
-        return view('profile.edit', [
+        return view('dashboard.profile', [
             'user' => $request->user(),
         ]);
     }
-
     /**
      * Update the user's profile information.
      *
@@ -38,7 +37,7 @@ class ProfileController extends Controller
 
         $request->user()->save();
 
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
+        return Redirect::route('profile')->with('status', 'profile-updated');
     }
 
     /**
@@ -49,10 +48,6 @@ class ProfileController extends Controller
      */
     public function destroy(Request $request)
     {
-        $request->validateWithBag('userDeletion', [
-            'password' => ['required', 'current-password'],
-        ]);
-
         $user = $request->user();
 
         Auth::logout();
