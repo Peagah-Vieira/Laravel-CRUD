@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title', 'Breeze & Tailwind')</title>
+    <link rel="shortcut icon" href="{{ asset('assets/img/tailwind.svg') }}" type="image/x-icon">
     {{-- SCRIPTS --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
