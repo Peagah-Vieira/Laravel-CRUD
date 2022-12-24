@@ -34,9 +34,11 @@
                 <div class="flex-none w-auto max-w-full px-3 my-auto">
                     <div class="h-full">
                         <h5 data-tooltip-target="tooltip-name" data-tooltip-placement="right" class="mb-1">
-                          <a href="">{{$user->fullName}}</a>
+                          <a href="#!">{{$user->fullName}}</a>
                         </h5>
-                        <p data-tooltip-target="tooltip-email" data-tooltip-placement="right" class="mb-0 font-semibold leading-normal text-size-sm">{{$user->email}}</p>
+                        <p data-tooltip-target="tooltip-email" data-tooltip-placement="right" class="mb-0 font-semibold leading-normal text-size-sm">
+                          <a href="#!">{{$user->email}}</a>
+                        </p>
                         <form action="{{ route('profile.destroy') }}" method="POST">
                           @csrf
                           @method('delete')
