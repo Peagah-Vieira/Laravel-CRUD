@@ -110,10 +110,7 @@
                 </div>
             </div>
         </nav>
-
         @yield('content')
     </main>
-
-    @yield('edit-modal')
 </body>
 </html>
