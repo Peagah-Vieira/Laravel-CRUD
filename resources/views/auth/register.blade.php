@@ -34,19 +34,30 @@
             <div class="mt-10">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
-                    {{-- NAME INPUT --}}
+                    {{-- FIRSTNAME INPUT --}}
                     <div class="flex flex-col mb-6">
-                        <label for="name" class="mb-1 text-xs sm:text-sm tracking-wide font-medium dark:text-white">{{ __('Your Name') }}</label>
+                        <label for="firstName" class="mb-1 text-xs sm:text-sm tracking-wide font-medium dark:text-white">{{ __('First name') }}</label>
+                        <div class="relative">
+                            
+                            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+                                <i class="fa-solid fa-at"></i>
+                            </div>
+                            <input id="firstName" type="text" name="firstName" class="pl-10 pr-4 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John Doe">           
+                        </div>
+                    </div>
+                    {{-- LASTNAME INPUT --}}
+                    <div class="flex flex-col mb-6">
+                        <label for="lastName" class="mb-1 text-xs sm:text-sm tracking-wide font-medium dark:text-white">{{ __('Last name') }}</label>
                         <div class="relative">
                             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
                                 <i class="fa-solid fa-at"></i>
                             </div>
-                            <input id="name" type="text" name="name" class="pl-10 pr-4 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John Doe">           
+                            <input id="lastName" type="text" name="lastName" class="pl-10 pr-4 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Scott">           
                         </div>
                     </div>
                     {{-- EMAIL INPUT --}}
                     <div class="flex flex-col mb-6">
-                        <label for="email" class="mb-1 text-xs sm:text-sm tracking-wide font-medium dark:text-white">{{ __('Your email') }}</label>
+                        <label for="email" class="mb-1 text-xs sm:text-sm tracking-wide font-medium dark:text-white">{{ __('Email') }}</label>
                         <div class="relative">
                             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
                                 <i class="fa-solid fa-at"></i>

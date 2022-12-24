@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,19 +16,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
     Route::controller(ProfileController::class)->group(function () {
-        Route::get('/profile', 'edit')->name('profile.edit');
-        Route::patch('/profile', 'update')->name('profile.update');
-        Route::delete('/profile', 'destroy')->name('profile.destroy');
+        Route::get('/dashboard-profile', 'show')->name('profile');
+        Route::patch('/dashboard-profile', 'update')->name('profile.update');
+        Route::delete('/dashboard-profile', 'destroy')->name('profile.destroy');
+    });
+    Route::controller(ApplicationController::class)->group(function () {
+        Route::get('/dashboard', 'dashboardShow')->name('dashboard');
+        Route::get('/dashboard-users', 'userShow')->name('users');
     });
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
