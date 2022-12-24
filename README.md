@@ -3,7 +3,7 @@
 <div align="center">
   <h3 align="center">Breeze & Tailwind</h3>
   <p align="center">
-    Simple CRUD using Breeze and Tailwind and mySQL
+    Simple CRUD using Breeze, Tailwind & mySQL
   </p>
 </div>
 
@@ -64,9 +64,6 @@ NodeJS v18.12.0 or higher <br>
 * [Instagram](https://www.instagram.com/pea_gah/)
 * [Email](mailto:peagahvieira2003@gmail.com)
 * [Linkedin](https://www.linkedin.com/in/pedro-henrique-vieira-073b62236/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
