@@ -52,10 +52,6 @@
             <div class="mt-10">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                    <div class="flex flex-col mb-6 p-3 rounded-lg dark:text-white dark:bg-gray-900">
-                        <p>{{ __('Email: user@gmail.com') }}</p>
-                        <p>{{ __('Password: user1234') }}</p>
-                    </div>
                     {{-- EMAIL INPUT --}}
                     <div class="flex flex-col mb-6">
                         <label for="email" class="mb-1 text-xs sm:text-sm tracking-wide font-medium dark:text-white">{{ __('Your email') }}</label>
@@ -63,7 +59,7 @@
                             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
                                 <i class="fa-solid fa-at"></i>
                             </div>
-                            <input id="email" type="email" name="email" class="pl-10 pr-4 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com">           
+                            <input id="email" type="email" name="email" class="pl-10 pr-4 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="user@gmail.com">           
                         </div>
                     </div>
                     {{-- PASSWORD INPUT --}}
@@ -73,7 +69,7 @@
                             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
                                 <i class="fa-solid fa-lock"></i>
                             </div>
-                            <input id="password" type="password" name="password" class="pl-10 pr-4 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="••••••••">
+                            <input id="password" type="password" name="password" class="pl-10 pr-4 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="user1234">
                         </div>
                     </div>
                     <div class="flex items-center justify-between my-5">

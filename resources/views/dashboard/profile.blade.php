@@ -296,7 +296,7 @@
                 <div class="p-4 pb-0 mb-0 bg-white border-b-0 rounded-t-2xl">
                     <div class="flex flex-wrap -mx-3">
                         <div class="flex items-center w-full max-w-full px-3 shrink-0 md:w-8/12 md:flex-none">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQHS6axQRJ6CVw/profile-displayphoto-shrink_800_800/0/1661532866902?e=1675900800&v=beta&t=35hOYx6guP1VHvMXupLtnVoUjNtCZgy6Hyx1pNKVRfQ" class="inline-flex items-center justify-center w-12 h-12 mr-2 text-white transition-all duration-200 ease-in-out text-sm rounded-xl"/>
+                            <img src="http://breeze-tailwind.test/assets/img/pessoalinda.jpeg" class="inline-flex items-center justify-center w-12 h-12 mr-2 text-white transition-all duration-200 ease-in-out text-sm rounded-xl"/>
                             <h6 class="mb-0">Peagah</h6>
                         </div>
                     </div>
