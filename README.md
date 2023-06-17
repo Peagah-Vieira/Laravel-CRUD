@@ -1,4 +1,4 @@
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)]([![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Peagah-Vieira/Pokemon/blob/master/readme-ptBR.md))
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Peagah-Vieira/BreezeCrud/blob/main/readme-ptBR.md)
 # BreezeCrud
 
 Performing a Crud using Breeze and TailwindCSS.
